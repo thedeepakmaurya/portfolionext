@@ -12,7 +12,7 @@ const Sidenav = ({ children }) => {
   return (
     <div className="flex h-screen">
       {/* sidemenu */}
-      <nav className="relative h-full w-72 bg-[#1E201E]">
+      <nav className="relative h-full w-72 bg-secondary">
         <ul className="w-full h-full flex flex-col gap-0.5 px-4 py-4">
           {menu.map((item, index) => (
             <SideNavLink
