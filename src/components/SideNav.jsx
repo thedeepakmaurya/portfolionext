@@ -54,7 +54,7 @@ const Sidenav = ({ children }) => {
     <div className="flex h-screen">
       {/* sidemenu */}
       <nav
-        className={`fixed xl:relative xl:w-72 w-64 h-full z-20 bg-secondary transition-transform duration-300 ${
+        className={`fixed xl:relative xl:w-72 w-64 h-full z-30 bg-secondary transition-transform duration-300 ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } xl:translate-x-0`}
       >
