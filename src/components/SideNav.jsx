@@ -7,8 +7,33 @@ import { usePathname } from "next/navigation";
 
 const Sidenav = ({ children }) => {
   const [home, setHome] = useState(false);
+  const [social, setSocial] = useState(true);
   const { menu } = data;
   const path = usePathname();
+
+  function socialVisible() {
+    if (path === "/") {
+      setSocial(false);
+    } else {
+      setSocial(true);
+    }
+  }
+
+  function pageTitle() {
+    if (path === "/career") {
+      return "Career";
+    } else if (path === "/tech-stack") {
+      return "Tech Stack";
+    } else if (path === "/projects") {
+      return "Projects";
+    } else if (path === "/certifications") {
+      return "Certifications";
+    } else if (path === "/education") {
+      return "Education";
+    } else {
+      return "Profile";
+    }
+  }
 
   function checkHome() {
     if (path === "/") {
@@ -20,6 +45,7 @@ const Sidenav = ({ children }) => {
 
   useEffect(() => {
     checkHome();
+    socialVisible();
   }, [path]);
 
   return (
@@ -70,8 +96,57 @@ const Sidenav = ({ children }) => {
         </ul>
       </nav>
 
-      {/* main content */}
-      <main className="flex-1 p-4 overflow-y-auto">{children}</main>
+      <div className="flex flex-col flex-1">
+        <header className="sticky top-0 px-5 py-2 z-10">
+          <h1 className="flex justify-between">
+            <div className="flex items-center gap-2">
+              <svg className="xl:hidden"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="currentColor"
+              >
+                <rect y="5" width="20" height="1" rx="1" />
+                <rect y="11" width="20" height="1" rx="1" />
+                <rect y="17" width="20" height="1" rx="1" />
+              </svg>
+              {pageTitle()}
+            </div>
+            {social && (
+              <span className="flex gap-2 items-center">
+                <Link
+                  href="https://linkedin.com/in/thedeepakmaurya"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="28"
+                    height="28"
+                    fill="currentColor"
+                  >
+                    <path d="M6.94 8h2.5v8h-2.5V8zM8.2 6.4c.8 0 1.4-.6 1.4-1.4s-.6-1.4-1.4-1.4-1.4.6-1.4 1.4.6 1.4 1.4 1.4zM10.9 8h2.3v1.1c.4-.6 1.1-1.1 2.2-1.1 1.8 0 2.9 1.1 2.9 3.3V16h-2.5v-4.1c0-1-.4-1.8-1.3-1.8s-1.6.8-1.6 1.8V16h-2.5V8z" />
+                  </svg>
+                </Link>
+                <Link href="https://github.com/thedeepakmaurya" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                  >
+                    <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.39 7.86 10.9.57.1.78-.25.78-.55v-2c-3.21.7-3.88-1.4-3.88-1.4-.52-1.3-1.28-1.64-1.28-1.64-1.05-.7.08-.68.08-.68 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.71 1.26 3.38.97.1-.75.41-1.26.74-1.55-2.56-.29-5.25-1.28-5.25-5.73 0-1.27.45-2.32 1.2-3.14-.12-.3-.52-1.5.11-3.13 0 0 .97-.3 3.2 1.2a11.1 11.1 0 0 1 5.8 0c2.24-1.5 3.2-1.2 3.2-1.2.63 1.63.24 2.83.12 3.13.75.82 1.2 1.87 1.2 3.14 0 4.46-2.7 5.43-5.27 5.72.42.36.8 1.07.8 2.15v3.18c0 .3.2.65.78.54A10.94 10.94 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z" />
+                  </svg>
+                </Link>
+              </span>
+            )}
+          </h1>
+        </header>
+        {/* main content */}
+        <main className="flex-1 p-4 overflow-y-auto">{children}</main>
+      </div>
     </div>
   );
 };
