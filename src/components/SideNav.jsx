@@ -108,7 +108,7 @@ const Sidenav = ({ children }) => {
         ></div>
       )}
 
-      <div className="flex flex-col flex-1 max-w-[100vw]">
+      <div className="flex flex-col overflow-y-auto flex-1 max-w-[100vw]">
         <header className="sticky top-0 px-5 py-2 z-10">
           <h1 className="flex justify-between">
             <div className="flex items-center gap-2">
@@ -160,7 +160,13 @@ const Sidenav = ({ children }) => {
           </h1>
         </header>
         {/* main content */}
-        <main className="flex-1 p-5 overflow-y-auto">{children}</main>
+        <main className="flex-1 p-5">{children}</main>
+
+        <footer className="flex justify-center px-5 py-2 mb-2">
+          <div className="bg-secondary rounded-full shadow-lg xl:w-[60%] w-full py-2 px-4 ">
+            <h1>{'\u00a9'} 2024 - <span className="text-sm">Designed by <Link href="/">Deepak Maurya</Link></span></h1>
+          </div>
+        </footer>
       </div>
     </div>
   );
