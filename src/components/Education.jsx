@@ -3,10 +3,10 @@ import React from "react";
 
 const Education = () => {
   return (
-    <section className="h-full w-full flex gap-1 items-center justify-center">
+    <section className="h-full w-full flex xl:flex-row flex-col xl:gap-1 gap-5 items-center justify-center">
       <div>
         <svg
-          className="text-lightforeground"
+          className="text-lightforeground hidden xl:block"
           xmlns="http://www.w3.org/2000/svg"
           width="100"
           height="1"
@@ -15,7 +15,7 @@ const Education = () => {
           <rect width="200" height="1" />
         </svg>
       </div>
-      <div className="w-auto h-32 flex items-center justify-center gap-2 px-4">
+      <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
         <Image
           className="rounded-full grayscale border-2 border-foreground shadow-lg"
           src="/img/parvatijainsdchool.gif"
@@ -39,7 +39,7 @@ const Education = () => {
           <rect width="200" height="1" />
         </svg>
       </div>
-      <div className="w-auto h-32 flex items-center justify-center gap-2 px-4">
+      <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
         <Image
           className="rounded-full grayscale border-2 border-foreground shadow-lg "
           src="/img/dav.jpeg"

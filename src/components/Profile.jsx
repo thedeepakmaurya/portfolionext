@@ -7,7 +7,7 @@ const profile = () => {
   return (
     <section className="h-full w-full flex flex-col items-center justify-center">
       <Image
-        className="border-2 border-foreground rounded-full shadow-lg grayscale"
+        className="border-2 border-foreground rounded-full shadow-lg grayscale xl:mb-0 mb-2"
         src="/img/profile.jpg"
         alt="profile"
         width={80}
@@ -51,7 +51,7 @@ const profile = () => {
           </svg>
         </Link>
       </div>
-      <h2 className="text-sm text-center w-[65%]">
+      <h2 className="text-sm text-center xl:w-[65%] w-full">
         Passionate React.js developer crafting dynamic user experiences with
         seamless performance. I thrive on turning complex problems into elegant,
         intuitive solutions.

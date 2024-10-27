@@ -8,7 +8,7 @@ const Projects = () => {
 
   return (
     <section className="flex items-center justify-center width-full h-full">
-      <div className="w-[60%] h-auto flex flex-col gap-6 bg-secondary rounded-md px-4 py-10 shadow-lg">
+      <div className="xl:w-[60%] w-full h-auto flex flex-col gap-6 bg-secondary rounded-md px-4 py-10 shadow-lg">
         {projects.map((project, index) => (
           <Link href={project.link} key={index} target="_blank">
             <div className="w-auto h-auto flex items-center justify-start gap-2 px-4">

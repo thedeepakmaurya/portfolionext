@@ -8,6 +8,8 @@ import { usePathname } from "next/navigation";
 const Sidenav = ({ children }) => {
   const [home, setHome] = useState(false);
   const [social, setSocial] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   const { menu } = data;
   const path = usePathname();
 
@@ -51,7 +53,11 @@ const Sidenav = ({ children }) => {
   return (
     <div className="flex h-screen">
       {/* sidemenu */}
-      <nav className="relative w-72 bg-secondary">
+      <nav
+        className={`fixed xl:relative xl:w-72 w-64 h-full z-20 bg-secondary transition-transform duration-300 ${
+          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        } xl:translate-x-0`}
+      >
         <ul className="w-full h-full flex flex-col gap-0.5 px-4 py-4">
           {menu.map((item, index) => (
             <SideNavLink
@@ -63,7 +69,6 @@ const Sidenav = ({ children }) => {
             />
           ))}
         </ul>
-
         <ul
           onClick={() => {
             checkHome();
@@ -96,21 +101,31 @@ const Sidenav = ({ children }) => {
         </ul>
       </nav>
 
-      <div className="flex flex-col flex-1">
+      {isSidebarOpen && (
+        <div
+          className="fixed inset-0 bg-black opacity-50 z-20 md:hidden backdrop-blur-[2px]"
+          onClick={() => setIsSidebarOpen(false)}
+        ></div>
+      )}
+
+      <div className="flex flex-col flex-1 max-w-[100vw]">
         <header className="sticky top-0 px-5 py-2 z-10">
           <h1 className="flex justify-between">
             <div className="flex items-center gap-2">
-              <svg className="xl:hidden"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="20"
-                height="20"
-                fill="currentColor"
-              >
-                <rect y="5" width="20" height="1" rx="1" />
-                <rect y="11" width="20" height="1" rx="1" />
-                <rect y="17" width="20" height="1" rx="1" />
-              </svg>
+              <button onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
+                <svg
+                  className="xl:hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                >
+                  <rect y="5" width="20" height="1" rx="1" />
+                  <rect y="11" width="20" height="1" rx="1" />
+                  <rect y="17" width="20" height="1" rx="1" />
+                </svg>
+              </button>
               {pageTitle()}
             </div>
             {social && (
@@ -145,7 +160,7 @@ const Sidenav = ({ children }) => {
           </h1>
         </header>
         {/* main content */}
-        <main className="flex-1 p-4 overflow-y-auto">{children}</main>
+        <main className="flex-1 p-5 overflow-y-auto">{children}</main>
       </div>
     </div>
   );
