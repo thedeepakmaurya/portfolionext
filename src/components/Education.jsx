@@ -18,7 +18,7 @@ const Education = () => {
       <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
         <Image
           className="rounded-full grayscale border-2 border-foreground shadow-lg"
-          src="/img/parvatijainsdchool.gif"
+          src="/img/education/parvatijainsdchool.gif"
           alt="sgwebapp"
           width={50}
           height={50}
@@ -42,7 +42,7 @@ const Education = () => {
       <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
         <Image
           className="rounded-full grayscale border-2 border-foreground shadow-lg "
-          src="/img/dav.jpeg"
+          src="/img/education/dav.jpeg"
           alt="sgwebapp"
           width={50}
           height={50}
