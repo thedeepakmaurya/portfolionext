@@ -1,18 +1,31 @@
-"use client"
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import SideNavLink from "./SideNavLink";
 import data from "../../public/database/nav.json";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Sidenav = ({ children }) => {
+  const [home, setHome] = useState(false);
   const { menu } = data;
   const path = usePathname();
+
+  function checkHome() {
+    if (path === "/") {
+      setHome(true);
+    } else {
+      setHome(false);
+    }
+  }
+
+  useEffect(() => {
+    checkHome();
+  }, [path]);
 
   return (
     <div className="flex h-screen">
       {/* sidemenu */}
-      <nav className="relative h-full w-72 bg-secondary">
+      <nav className="relative w-72 bg-secondary">
         <ul className="w-full h-full flex flex-col gap-0.5 px-4 py-4">
           {menu.map((item, index) => (
             <SideNavLink
@@ -25,8 +38,17 @@ const Sidenav = ({ children }) => {
           ))}
         </ul>
 
-        <ul className="w-full absolute bottom-4 px-4">
-          <li className="w-full">
+        <ul
+          onClick={() => {
+            checkHome();
+          }}
+          className="w-full absolute bottom-4 px-4"
+        >
+          <li
+            className={`${
+              home ? "bg-background" : "bg-transparent"
+            } w-full px-2 py-2.5 rounded-md hover:bg-background`}
+          >
             <Link className="flex items-center px-2 gap-1.5" href="/">
               <span>
                 <svg
@@ -49,7 +71,7 @@ const Sidenav = ({ children }) => {
       </nav>
 
       {/* main content */}
-      <main className="flex-1 p-4">{children}</main>
+      <main className="flex-1 p-4 overflow-y-auto">{children}</main>
     </div>
   );
 };

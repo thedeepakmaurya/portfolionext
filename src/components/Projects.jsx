@@ -1,9 +1,41 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
+import data from "../../public/database/nav.json";
+import Link from "next/link";
 
 const Projects = () => {
-  return (
-    <div>Projects</div>
-  )
-}
+  const { projects } = data;
 
-export default Projects
+  return (
+
+      <section className="flex justify-center width-full h-auto">
+        <div className="w-[60%] h-full flex flex-col gap-6 bg-secondary rounded-md px-4 py-10 my-10 shadow-lg">
+            {projects.map((project, index) => (
+             <Link href={project.link} key={index} target="_blank"><div
+                className="w-auto h-auto flex items-center justify-start gap-2 px-4"
+              >
+                <Image
+                  className="rounded-full grayscale border-2 border-foreground shadow-lg object-cover "
+                  src={project.image}
+                  alt="project image"
+                  width={40}
+                  height={40}
+                />
+                <div>
+                  <h1>{project.title}</h1>
+                  <h2 className="text-sm">{project.description}</h2>
+                  <div className="flex gap-2">
+                    <i className="bx bxl-javascript bx-xs"></i>
+                    <i className="bx bxl-react bx-xs"></i>
+                    <i className="bx bxl-tailwind-css bx-xs"></i>
+                  </div>
+                </div>
+              </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+  );
+};
+
+export default Projects;

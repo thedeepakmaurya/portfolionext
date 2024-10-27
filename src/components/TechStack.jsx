@@ -2,14 +2,8 @@ import React from "react";
 
 const TechStack = () => {
   return (
-    <section className="h-full">
-      {/* header */}
-      <div>
-        <h1>Tech Stack</h1>
-      </div>
 
-      {/* details */}
-      <div className="h-full flex flex-col justify-center">
+      <section className="h-full flex flex-col justify-center">
         <div className="px-14">
           <h2 className="float-right w-[70%] bg-secondary p-4 rounded-lg text-sm shadow-lg mb-6">
             My proficiency lies in harnessing the power of JavaScript,
@@ -27,16 +21,15 @@ const TechStack = () => {
         </div>
 
         <div className="px-14 flex gap-4">
-          <i class="bx bx-code-alt bx-sm"></i>
-          <i class="bx bxl-html5 bx-sm"></i>
-          <i class="bx bxl-css3 bx-sm"></i>
-          <i class="bx bxl-javascript bx-sm"></i>
-          <i class="bx bxl-react bx-sm"></i>
-          <i class="bx bxl-tailwind-css bx-sm"></i>
-          <i class="bx bxl-bootstrap bx-sm"></i>
-          <i class="bx bxl-github bx-sm"></i>
+          <i className="bx bx-code-alt bx-sm"></i>
+          <i className="bx bxl-html5 bx-sm"></i>
+          <i className="bx bxl-css3 bx-sm"></i>
+          <i className="bx bxl-javascript bx-sm"></i>
+          <i className="bx bxl-react bx-sm"></i>
+          <i className="bx bxl-tailwind-css bx-sm"></i>
+          <i className="bx bxl-bootstrap bx-sm"></i>
+          <i className="bx bxl-github bx-sm"></i>
         </div>
-      </div>
     </section>
   );
 };

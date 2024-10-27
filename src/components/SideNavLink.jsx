@@ -22,8 +22,8 @@ const SideNavLink = ({
       <Link
         href={route}
         className={`${
-          active ? "bg-[#3C3D37]" : "bg-transparent"
-        } w-full px-2 py-2.5 flex items-center gap-1.5 text-sm rounded-md hover:bg-[#3C3D37]`}
+          active ? "bg-background" : "bg-transparent"
+        } w-full px-2 py-2.5 flex items-center gap-1.5 text-sm rounded-md hover:bg-background`}
       >
         <span dangerouslySetInnerHTML={{ __html: icon }} />
         <span className="capitalize">{label}</span>

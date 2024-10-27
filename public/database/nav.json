@@ -30,5 +30,60 @@
       "route": "/education",
       "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='currentColor'><path d='M12 3L1 9l11 6 9-4.91V17a1 1 0 0 1-1 1h-6v2h6c1.65 0 3-1.35 3-3V9L12 3zm-1 11L3.36 9.36 12 5.69l8.64 3.67L11 14z'/></svg>"
     }
+  ],
+  "projects": [
+    {
+      "title": "Edu Mentor",
+      "description": "Teacher Student Appointment Web App",
+      "link": "https://github.com/thedeepakmaurya/edumentor",
+      "image": "/img/project/edumentor.png"
+    },
+    {
+      "title": "VideoTube",
+      "description": "YouTube Web App Clone",
+      "link": "https://github.com/thedeepakmaurya/videotube",
+      "image": "/img/project/youtube.jpg"
+    },
+    {
+      "title": "FoodVilla",
+      "description": "Swiggy Web App Clone",
+      "link": "https://github.com/thedeepakmaurya/foodvilla",
+      "image": "/img/project/swiggy.jpeg"
+    },
+    {
+      "title": "BlinkEat",
+      "description": "Food Order Application",
+      "link": "https://github.com/thedeepakmaurya/blinkeat",
+      "image": "/img/project/food.jpg"
+    },
+    {
+      "title": "ProjectForm",
+      "description": "Multi Step Project Form",
+      "link": "https://github.com/deepakmaurya/multiform",
+      "image": "/img/project/form.jpg"
+    },
+    {
+      "title": "Portfolio",
+      "description": "Portfolio Website",
+      "link": "https://github.com/deepakmaurya/portfolioapp",
+      "image": "/img/project/portfolio.svg"
+    }
+  ],
+  "certificates": [
+    {
+      "img": "/img/certification/ducat.png",
+      "institute": "DUCAT India",
+      "course": "MERN Stack"
+    },
+    {
+      "img": "/img/certification/namastedev.png",
+      "institute": "NamasteDev",
+      "course": "Javascript"
+    },
+    {
+      "img": "/img/certification/udemy.webp",
+      "institute": "Udemy",
+      "course": "React.js"
+    }
   ]
 }

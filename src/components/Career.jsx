@@ -3,22 +3,53 @@ import React from "react";
 
 const Career = () => {
   return (
-    <section className="h-full w-ful">
-      <h1>Career</h1>
-      <div className="h-full w-full flex gap-2 items-center justify-center">
-        <div><svg xmlns="http://www.w3.org/2000/svg" width="100" height="2" fill="currentColor">
-  <rect width="200" height="1" />
-</svg></div>
-        <div className="w-60 h-32 flex items-center justify-center border border-foreground px-2 rounded-lg">
-          <h1>Web Developer</h1>
+      <section className="h-full w-full flex gap-1 items-center justify-center">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="1"
+            fill="currentColor"
+          >
+            <rect width="200" height="1" />
+          </svg>
         </div>
-        <div><svg xmlns="http://www.w3.org/2000/svg" width="100" height="2" fill="currentColor">
-  <rect width="200" height="1" />
-</svg></div>
-        <div className="w-60 h-32 flex items-center justify-center border border-foreground px-2 rounded-lg">
-          <h1>Web Developer</h1>
+        <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
+          <Image
+            className="rounded-full grayscale border-2 border-foreground shadow-lg"
+            src="/img/unified.jpeg"
+            alt="sgwebapp"
+            width={50}
+            height={50}
+          />
+          <div>
+            <h1>Unified Mentor Pvt Ltd</h1>
+            <h2 className="text-sm">Web Developer</h2>
+          </div>
         </div>
-      </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="1"
+            fill="currentColor"
+          >
+            <rect width="200" height="1" />
+          </svg>
+        </div>
+        <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
+          <Image
+            className="rounded-full grayscale border-2 border-foreground shadow-lg "
+            src="/img/sg.jpeg"
+            alt="sgwebapp"
+            width={50}
+            height={50}
+          />
+          <div>
+            <h1>SG Webapp Techniques</h1>
+            <h2 className="text-sm">Web Developer</h2>
+          </div>
+        </div>
     </section>
   );
 };

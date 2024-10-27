@@ -5,7 +5,8 @@
 :root {
   --background: #3C3D37;
   --foreground: #697565;
-  --secondary:  #1E201E;
+  --secondary: #1E201E;
+  --light-foreground: #566053;
 }
 
 body {
