@@ -27,6 +27,7 @@ const TechStack = () => {
         <i className="bx bxl-tailwind-css bx-sm"></i>
         <i className="bx bxl-bootstrap bx-sm"></i>
         <i className="bx bxl-github bx-sm"></i>
+        <span className="hidden xl:block"><i class='bx bxl-visual-studio bx-sm'></i></span>
       </div>
     </section>
   );
