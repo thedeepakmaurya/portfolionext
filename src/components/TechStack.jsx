@@ -19,7 +19,7 @@ const TechStack = () => {
       </div>
 
       <div className="xl:px-14 px-1 flex gap-4">
-        <span className="hidden xl:block"><i className="bx bx-code-alt bx-sm"></i></span>
+        <span className="hidden md:block xl:block"><i className="bx bx-code-alt bx-sm"></i></span>
         <i className="bx bxl-html5 bx-sm"></i>
         <i className="bx bxl-css3 bx-sm"></i>
         <i className="bx bxl-javascript bx-sm"></i>
