@@ -66,12 +66,15 @@ const Sidenav = ({ children }) => {
               label={item.label}
               icon={item.icon}
               active={path === item.route}
+              toggleSideBar = {() => {setIsSidebarOpen(false)}}
             />
           ))}
         </ul>
+
         <ul
           onClick={() => {
             checkHome();
+            setIsSidebarOpen(false);
           }}
           className="w-full absolute bottom-4 px-4"
         >
@@ -160,7 +163,7 @@ const Sidenav = ({ children }) => {
           </h1>
         </header>
         {/* main content */}
-        <main className="flex-1 p-5">{children}</main>
+        <main className="h-full w-full p-5">{children}</main>
 
         <footer className="flex justify-center px-5 py-2 mb-2">
           <div className="bg-secondary rounded-full shadow-lg xl:w-[60%] w-full py-2 px-4 ">

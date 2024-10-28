@@ -16,9 +16,10 @@ const SideNavLink = ({
   ),
   route,
   active = false,
+  toggleSideBar
 }) => {
   return (
-    <li className="w-full">
+    <li className="w-full" onClick={toggleSideBar}>
       <Link
         href={route}
         className={`${
