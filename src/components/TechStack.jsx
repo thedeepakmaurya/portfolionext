@@ -19,7 +19,9 @@ const TechStack = () => {
       </div>
 
       <div className="xl:px-14 px-1 flex gap-4">
-        <span className="hidden md:block xl:block"><i className="bx bx-code-alt bx-sm"></i></span>
+        <span className="hidden md:block xl:block">
+          <i className="bx bx-code-alt bx-sm"></i>
+        </span>
         <i className="bx bxl-html5 bx-sm"></i>
         <i className="bx bxl-css3 bx-sm"></i>
         <i className="bx bxl-javascript bx-sm"></i>
@@ -27,7 +29,9 @@ const TechStack = () => {
         <i className="bx bxl-tailwind-css bx-sm"></i>
         <i className="bx bxl-bootstrap bx-sm"></i>
         <i className="bx bxl-github bx-sm"></i>
-        <span className="hidden xl:block"><i class='bx bxl-visual-studio bx-sm'></i></span>
+        <span className="hidden xl:block">
+          <i className="bx bxl-visual-studio bx-sm"></i>
+        </span>
       </div>
     </section>
   );

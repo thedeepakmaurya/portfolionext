@@ -54,9 +54,9 @@ const Sidenav = ({ children }) => {
     <div className="flex h-screen">
       {/* sidemenu */}
       <nav
-        className={`fixed xl:relative xl:w-72 w-64 h-full z-30 bg-secondary transition-transform duration-300 ${
+        className={`fixed lg:relative xl:relative w-64 lg:w-64 md:w-72 xl:w-72  h-full z-30 bg-secondary transition-transform duration-300 ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } xl:translate-x-0`}
+        } lg:translate-x-0 xl:translate-x-0`}
       >
         <ul className="w-full h-full flex flex-col gap-0.5 px-4 py-4">
           {menu.map((item, index) => (
@@ -88,8 +88,8 @@ const Sidenav = ({ children }) => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  width="26"
-                  height="26"
+                  width="28"
+                  height="28"
                   fill="currentColor"
                 >
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08s5.97 1.09 6 3.08C16.71 17.72 14.5 19 12 19z" />
@@ -106,7 +106,7 @@ const Sidenav = ({ children }) => {
 
       {isSidebarOpen && (
         <div
-          className="fixed inset-0 bg-black opacity-50 z-20 md:hidden backdrop-blur-[2px]"
+          className="fixed inset-0 bg-black opacity-50 z-20 lg:hidden backdrop-blur-[2px]"
           onClick={() => setIsSidebarOpen(false)}
         ></div>
       )}
@@ -166,7 +166,7 @@ const Sidenav = ({ children }) => {
         <main className="h-full w-full p-5">{children}</main>
 
         <footer className="flex justify-center px-5 py-2 mb-2">
-          <div className="bg-secondary rounded-full shadow-lg xl:w-[60%] w-full py-2 px-4 ">
+          <div className="bg-secondary rounded-full shadow-lg lg:w-[70%] xl:w-[60%] w-full py-2 px-4 ">
             <h1>{'\u00a9'} 2024 - <span className="text-sm">Designed by <Link href="/">Deepak Maurya</Link></span></h1>
           </div>
         </footer>

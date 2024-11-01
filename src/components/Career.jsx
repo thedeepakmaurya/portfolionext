@@ -3,7 +3,7 @@ import React from "react";
 
 const Career = () => {
   return (
-    <section className="h-full w-full flex flex-col xl:flex-row gap-5 xl:gap-1 items-center justify-center">
+    <section className="h-full w-full flex flex-col lg:flex-row xl:flex-row gap-5 xl:gap-1 items-center justify-center">
       <div>
         <svg
           className="text-lightforeground hidden xl:block"

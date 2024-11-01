@@ -3,7 +3,7 @@ import React from "react";
 
 const Education = () => {
   return (
-    <section className="h-full w-full flex xl:flex-row flex-col xl:gap-1 gap-5 items-center justify-center">
+    <section className="h-full w-full flex lg:flex-row xl:flex-row flex-col xl:gap-1 gap-5 items-center justify-center overflow-x-hidden">
       <div>
         <svg
           className="text-lightforeground hidden xl:block"
@@ -24,7 +24,7 @@ const Education = () => {
           height={50}
         />
         <div>
-          <h1>Sh. Paravati Jain Co. Edu. School</h1>
+          <h1 className="text-nowrap">Sh. Paravati Jain Co. Edu. School</h1>
           <h2 className="text-sm">12th, Science</h2>
         </div>
       </div>
@@ -48,7 +48,7 @@ const Education = () => {
           height={50}
         />
         <div>
-          <h1>Dayanand Anglo Vedic College</h1>
+          <h1 className="text-nowrap">Dayanand Anglo Vedic College</h1>
           <h2 className="text-sm">BSc, Computer Science</h2>
         </div>
       </div>
