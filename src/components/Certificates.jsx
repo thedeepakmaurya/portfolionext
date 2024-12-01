@@ -23,9 +23,9 @@ const Certificates = () => {
 
       <div className=" w-full flex lg:flex-row xl:flex-row flex-col gap-10 items-center justify-center">
         {certificates.map((certificate, index) => (
-          <div className=" flex flex-col  justify-center gap-2 border border-1 border-lightforeground p-4 h-32 xl:w-44 w-full rounded-lg px-4">
+          <div key={index} className=" flex flex-col  justify-center gap-2 border border-1 border-lightforeground p-4 h-32 xl:w-44 w-full rounded-lg px-4">
             <Image
-              className="rounded-full h-8 w-8 grayscale border-2 border-foreground shadow-lg"
+              className="rounded-full h-8 w-8 grayscale border-2 border-lightforeground shadow-lg"
               src={certificate.img}
               alt="certificates"
               width={50}

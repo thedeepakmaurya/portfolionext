@@ -17,7 +17,7 @@ const Career = () => {
       </div>
       <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
         <Image
-          className="rounded-full grayscale border-2 border-foreground shadow-lg"
+          className="rounded-full grayscale border-2 border-lightforeground shadow-lg"
           src="/img/career/unified.jpeg"
           alt="sgwebapp"
           width={50}
@@ -41,7 +41,7 @@ const Career = () => {
       </div>
       <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
         <Image
-          className="rounded-full grayscale border-2 border-foreground shadow-lg "
+          className="rounded-full grayscale border-2 border-lightforeground shadow-lg "
           src="/img/career/sg.jpeg"
           alt="sgwebapp"
           width={50}
