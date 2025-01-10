@@ -1,11 +1,12 @@
 import "./globals.css";
 import Sidenav from "@/components/SideNav";
-import { Outfit } from "next/font/google";
+import { Comfortaa } from "next/font/google";
 // In _app.js or in your component
 import 'boxicons/css/boxicons.min.css';
 
-const outfit = Outfit({ subsets: ["latin"] });
-
+const comfortaa = Comfortaa({
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Deepak Maurya",
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={outfit?.className}
+        className={comfortaa?.className}
       >
         <Sidenav>{children}</Sidenav>
         <meta name="google-site-verification" content="AKJzXLR56cBvKAyymdgZB1914DXZvxOj7WgGuDyqINw" />
