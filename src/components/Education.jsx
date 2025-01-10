@@ -17,15 +17,15 @@ const Education = () => {
       </div>
       <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
         <Image
-          className="rounded-full grayscale border-2 border-foreground shadow-lg"
-          src="/img/education/parvatijainsdchool.gif"
-          alt="sgwebapp"
+          className="rounded-full border-2 border-foreground shadow-lg"
+          src="/img/education/ignou.jpg"
+          alt="ignou"
           width={50}
           height={50}
         />
         <div>
-          <h1 className="text-nowrap">Sh. Paravati Jain Co. Edu. School</h1>
-          <h2 className="text-sm">12th, Science</h2>
+          <h1 className="text-nowrap">Indira Gandhi National Open University</h1>
+          <h2 className="text-sm">MCA, Software Engineering</h2>
         </div>
       </div>
       <div>
@@ -41,7 +41,7 @@ const Education = () => {
       </div>
       <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
         <Image
-          className="rounded-full grayscale border-2 border-foreground shadow-lg "
+          className="rounded-full border-2 border-foreground shadow-lg "
           src="/img/education/dav.jpeg"
           alt="sgwebapp"
           width={50}

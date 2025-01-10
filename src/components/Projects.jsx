@@ -22,7 +22,7 @@ const Projects = () => {
                 </div>
               </div>
               <Image
-                className="rounded-full grayscale border-2 border-foreground shadow-lg object-cover "
+                className="rounded-full border-2 border-foreground shadow-lg object-cover "
                 src={project.image}
                 alt="project image"
                 width={40}

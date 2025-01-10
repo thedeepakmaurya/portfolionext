@@ -4,6 +4,7 @@ import SideNavLink from "./SideNavLink";
 import data from "../../public/database/nav.json";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Sidenav = ({ children }) => {
   const [home, setHome] = useState(false);
@@ -85,15 +86,7 @@ const Sidenav = ({ children }) => {
           >
             <Link className="flex items-center px-2 gap-1.5" href="/">
               <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="28"
-                  height="28"
-                  fill="currentColor"
-                >
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08s5.97 1.09 6 3.08C16.71 17.72 14.5 19 12 19z" />
-                </svg>
+                <Image className="w-8 h-8 rounded-full" src="/img/profile/profile.jpg" alt="profile" width={100} height={100}/>
               </span>
               <span className="flex flex-col text-sm">
                 Deepak Maurya

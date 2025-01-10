@@ -25,7 +25,7 @@ const Certificates = () => {
         {certificates.map((certificate, index) => (
           <div key={index} className=" flex flex-col  justify-center gap-2 border border-1 border-lightforeground p-4 h-32 xl:w-44 w-full rounded-lg px-4">
             <Image
-              className="rounded-full h-8 w-8 grayscale border-2 border-lightforeground shadow-lg"
+              className="rounded-full h-8 w-8 border-2 border-lightforeground shadow-lg"
               src={certificate.img}
               alt="certificates"
               width={50}

@@ -17,14 +17,14 @@ const Career = () => {
       </div>
       <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
         <Image
-          className="rounded-full grayscale border-2 border-lightforeground shadow-lg"
-          src="/img/career/unified.jpeg"
+          className="rounded-full border-2 border-lightforeground shadow-lg "
+          src="/img/career/sg.jpeg"
           alt="sgwebapp"
           width={50}
           height={50}
         />
         <div>
-          <h1>Unified Mentor Pvt Ltd</h1>
+          <h1>SG Webapp Techniques</h1>
           <h2 className="text-sm">Web Developer</h2>
         </div>
       </div>
@@ -39,16 +39,17 @@ const Career = () => {
           <rect width="200" height="1" />
         </svg>
       </div>
+
       <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
         <Image
-          className="rounded-full grayscale border-2 border-lightforeground shadow-lg "
-          src="/img/career/sg.jpeg"
+          className="rounded-full border-2 border-lightforeground shadow-lg"
+          src="/img/career/unified.jpeg"
           alt="sgwebapp"
           width={50}
           height={50}
         />
         <div>
-          <h1>SG Webapp Techniques</h1>
+          <h1>Unified Mentor Pvt Ltd</h1>
           <h2 className="text-sm">Web Developer</h2>
         </div>
       </div>
