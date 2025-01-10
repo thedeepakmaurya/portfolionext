@@ -14,6 +14,8 @@ const Sidenav = ({ children }) => {
   const { menu } = data;
   const path = usePathname();
 
+  const currentYear = new Date().getFullYear();
+
   function socialVisible() {
     if (path === "/") {
       setSocial(false);
@@ -160,7 +162,7 @@ const Sidenav = ({ children }) => {
 
         <footer className="flex justify-center px-5 py-2 mb-2">
           <div className="bg-secondary rounded-full shadow-lg lg:w-[70%] xl:w-[60%] w-full py-2 px-4 ">
-            <h1>{'\u00a9'} 2024 - <span className="text-sm">Designed by <Link href="/">Deepak Maurya</Link></span></h1>
+            <h1>{'\u00a9'} {currentYear} - <span className="text-sm">Designed by <Link href="/">Deepak Maurya</Link></span></h1>
           </div>
         </footer>
       </div>
