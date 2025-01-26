@@ -22,11 +22,11 @@ const Projects = () => {
                 </div>
               </div>
               <Image
-                className="rounded-full border-2 border-foreground shadow-lg object-cover "
+                className="rounded-full w-10 h-10 border-2 border-foreground shadow-lg object-cover "
                 src={project.image}
                 alt="project image"
-                width={40}
-                height={40}
+                width={100}
+                height={100}
               />
             </div>
           </Link>
