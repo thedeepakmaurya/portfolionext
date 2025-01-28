@@ -17,7 +17,7 @@ const Education = () => {
       </div>
       <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
         <Image
-          className="rounded-full border-2 border-foreground shadow-lg"
+          className="rounded-full border-2 border-lightforeground shadow-lg"
           src="/img/education/ignou.jpg"
           alt="ignou"
           width={50}
@@ -41,7 +41,7 @@ const Education = () => {
       </div>
       <div className="w-auto h-auto flex items-center justify-center gap-2 px-4">
         <Image
-          className="rounded-full border-2 border-foreground shadow-lg "
+          className="rounded-full border-2 border-lightforeground shadow-lg "
           src="/img/education/dav.jpeg"
           alt="sgwebapp"
           width={50}
