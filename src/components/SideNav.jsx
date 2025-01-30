@@ -88,7 +88,7 @@ const Sidenav = ({ children }) => {
           >
             <Link className="flex items-center px-2 gap-1.5" href="/">
               <span>
-                <Image className="w-8 h-8 rounded-full" src="/img/profile/profile.jpg" alt="profile" width={100} height={100}/>
+                <Image className="w-8 h-8 rounded-full" src="/img/profile/deepakmaurya.png" alt="profile" width={100} height={100}/>
               </span>
               <span className="flex flex-col text-sm">
                 Deepak Maurya

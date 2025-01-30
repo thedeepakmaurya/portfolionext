@@ -8,7 +8,7 @@ const profile = () => {
     <section className="h-full w-full flex flex-col items-center justify-center">
       <Image
         className="border-2 border-foreground rounded-full shadow-lg xl:mb-0 mb-2"
-        src="/img/profile/profile.jpg"
+        src="/img/profile/deepakmaurya.png"
         alt="profile"
         width={80}
         height={80}
