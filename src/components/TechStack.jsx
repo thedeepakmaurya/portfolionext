@@ -19,19 +19,14 @@ const TechStack = () => {
       </div>
 
       <div className="xl:px-14 px-1 flex gap-4">
-        <span className="hidden md:block xl:block">
-          <i className="bx bx-code-alt bx-sm"></i>
-        </span>
-        <i className="bx bxl-html5 bx-sm"></i>
-        <i className="bx bxl-css3 bx-sm"></i>
-        <i className="bx bxl-javascript bx-sm"></i>
-        <i className="bx bxl-react bx-sm"></i>
-        <i className="bx bxl-tailwind-css bx-sm"></i>
-        <i className="bx bxl-bootstrap bx-sm"></i>
-        <i className="bx bxl-github bx-sm"></i>
-        <span className="hidden xl:block">
-          <i className="bx bxl-visual-studio bx-sm"></i>
-        </span>
+        <i className="ri-html5-fill ri-lg"></i>
+        <i className="ri-css3-fill ri-lg"></i>
+        <i className="ri-javascript-fill ri-lg"></i>
+        <i className="ri-nextjs-fill ri-lg"></i>
+        <i className="ri-reactjs-fill ri-lg"></i>
+        <i className="ri-tailwind-css-fill ri-lg"></i>
+        <i className="ri-bootstrap-fill ri-lg"></i>
+        <i className="ri-github-fill ri-lg"></i>
       </div>
     </section>
   );

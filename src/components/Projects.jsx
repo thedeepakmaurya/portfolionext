@@ -23,9 +23,8 @@ const Projects = () => {
                 <h1 className="">{project.title}</h1>
                 <h2 className="text-sm ">{project.description}</h2>
                 <div className="flex gap-2">
-                  <i className="bx bxl-javascript bx-xs"></i>
-                  <i className="bx bxl-react bx-xs"></i>
-                  <i className="bx bxl-tailwind-css bx-xs"></i>
+                <i className="ri-nextjs-fill"></i>
+                <i className="ri-tailwind-css-fill"></i>                  
                 </div>
               </div>
             </div>

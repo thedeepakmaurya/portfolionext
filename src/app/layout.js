@@ -1,8 +1,7 @@
 import "./globals.css";
 import Sidenav from "@/components/SideNav";
 import { Comfortaa } from "next/font/google";
-// In _app.js or in your component
-import 'boxicons/css/boxicons.min.css';
+import 'remixicon/fonts/remixicon.css'
 
 const comfortaa = Comfortaa({
   subsets: ["latin"],
