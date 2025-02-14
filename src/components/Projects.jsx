@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="lg:w-[70%] xl:w-[60%] w-full h-auto flex flex-col gap-6 bg-secondary rounded-md px-4 py-10 shadow-lg">
         {projects.map((project, index) => (
           <Link href={project.link} key={index} target="_blank">
-            <div className="w-auto h-auto flex items-center gap-3 xl:px-4 px-2">
+            <div className="w-auto h-auto flex items-center gap-3 xl:px-4 px-1">
               <Image
                 className="rounded-full w-9 h-9 border-2 border-lightforeground shadow-lg object-cover "
                 src={project.image}

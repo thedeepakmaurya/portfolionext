@@ -85,7 +85,7 @@ const Sidenav = ({ children }) => {
               } w-full px-2 py-2.5 rounded-md hover:bg-background`}
           >
             <Link className="flex items-center px-2 gap-1.5" href="/">
-              <span>
+              <span className="shrink-0">
                 <Image className="w-8 h-8 rounded-full" src="/img/profile/deepakmaurya.png" alt="profile" width={100} height={100} />
               </span>
               <span className="flex flex-col text-sm">

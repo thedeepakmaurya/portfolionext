@@ -7,11 +7,11 @@ const profile = () => {
   return (
     <section className="h-full w-full flex flex-col items-center justify-center">
       <Image
-        className="border-2 border-foreground rounded-full shadow-lg xl:mb-0 mb-2"
+        className="border-2 w-20 h-20 border-foreground rounded-full shadow-lg xl:mb-0 mb-2"
         src="/img/profile/deepakmaurya.png"
         alt="profile"
-        width={80}
-        height={80}
+        width={100}
+        height={100}
       />
       <div className="flex items-center gap-1 mb-1">
         <h1 className="text-xl">Deepak Maurya</h1>
