@@ -84,10 +84,10 @@ const Sidenav = ({ children }) => {
             className={`${home ? "bg-background" : "bg-transparent"
               } w-full px-2 py-2.5 rounded-md hover:bg-background`}
           >
-            <Link className="flex items-center px-2 gap-1.5" href="/">
-              <span className="shrink-0">
-                <Image className="w-8 h-8 rounded-full" src="/img/profile/deepakmaurya.png" alt="profile" width={100} height={100} />
-              </span>
+            <Link className="flex items-center px-1 gap-2" href="/">
+              <div className="w-8 h-8">
+                <Image className=" object-cover rounded-full " src="/img/profile/deepakmaurya.png" alt="profile" width={100} height={100} />
+              </div>
               <span className="flex flex-col text-sm">
                 Deepak Maurya
                 <span className="text-xs">Web Developer, UI Developer</span>
