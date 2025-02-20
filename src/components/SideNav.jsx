@@ -57,7 +57,7 @@ const Sidenav = ({ children }) => {
     <div className="flex h-screen">
       {/* sidemenu */}
       <nav
-        className={`fixed lg:relative xl:relative w-64 lg:w-64 md:w-72 xl:w-72  h-full z-30 bg-secondary transition-transform duration-300 ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        className={`fixed lg:relative xl:relative w-64  h-full z-30 bg-secondary transition-transform duration-300 ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
           } lg:translate-x-0 xl:translate-x-0`}
       >
         <ul className="w-full h-full flex flex-col gap-0.5 px-4 py-4">
@@ -90,7 +90,7 @@ const Sidenav = ({ children }) => {
               </div>
               <span className="flex flex-col text-sm">
                 Deepak Maurya
-                <span className="text-xs">Web Developer, UI Developer</span>
+                <span className="text-xs">Full Stack Developer</span>
               </span>
             </Link>
           </li>
@@ -142,10 +142,8 @@ const Sidenav = ({ children }) => {
         {/* main content */}
         <main className="h-full w-full p-5">{children}</main>
 
-        <footer className="flex justify-center px-5 py-2 mb-2">
-          <div className="bg-secondary rounded-full shadow-lg lg:w-[70%] xl:w-[60%] w-full py-2 px-4 ">
-            <h1>{'\u00a9'} {currentYear} - <span className="text-sm">Designed by <Link href="/">Deepak Maurya</Link></span></h1>
-          </div>
+        <footer className="flex justify-center py-2">
+            <span className="text-xs">{'\u00a9'} {currentYear} - Designed by <Link href="/">Deepak Maurya</Link></span>
         </footer>
       </div>
     </div>
