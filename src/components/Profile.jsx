@@ -28,9 +28,7 @@ const profile = () => {
         </Link>
       </div>
       <h2 className="text-sm text-center xl:w-[65%] w-full">
-        Passionate React.js developer crafting dynamic user experiences with
-        seamless performance. I thrive on turning complex problems into elegant,
-        intuitive solutions.
+        Frontend Developer with 1 year of solid experience building responsive and user-centric web applications. Successfully contributed to EdTech platforms, marketplace solutions, and management systems using modern web technologies.
       </h2>
     </section>
   );
